@@ -9,6 +9,10 @@
     width: 80%;
     position: relative;
     margin: 1rem auto 0;
+    transition: width 0.2s cubic-bezier(.42,.42,0,1);
+    &:hover, &:has(.custom-input:not(:placeholder-shown)){
+        width: 100%;
+    }
     .custom-input{
         width: 100%;
         padding: 8px 8px 8px 35px;
@@ -33,9 +37,8 @@
         }
     }
 }
-
 .result-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     background-color: field;
     border-radius: 0 0 15px 15px;

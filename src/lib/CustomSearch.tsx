@@ -66,7 +66,7 @@ const CustomSearch = (props: {data: DataType[]}) => {
                     />
                 </div>
 
-            <div className="input-container">
+            <div id="input-container" className="input-container">
                 <div className="search-icon">
                     {loading ?
                         <Oval
