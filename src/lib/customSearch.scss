@@ -10,7 +10,10 @@
     position: relative;
     margin: 1rem auto 0;
     transition: width 0.2s cubic-bezier(.42,.42,0,1);
-    &:hover, &:has(.custom-input:not(:placeholder-shown)){
+    &:hover, 
+    &:has(.custom-input:not(:placeholder-shown)),
+    &:has(.custom-input:focus-visible),
+    &:has(.custom-input:focus){
         width: 100%;
     }
     .custom-input{
